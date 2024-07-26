@@ -28,7 +28,9 @@ public class Main {
         System.out.println("Задача 5");
 
          for (int i = 1904; i < 2096; i = i + 4){
-             System.out.println(i + " год является високостным");
+             if ((i % 100!= 0) || (i % 400 == 0)) {
+                 System.out.println(i + " год является високостным");
+             }
          }
 
         System.out.println("Задача 6");
